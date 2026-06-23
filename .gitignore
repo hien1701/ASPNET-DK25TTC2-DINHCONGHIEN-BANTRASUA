@@ -1,0 +1,37 @@
+# ============================
+#  Visual Studio / ASP.NET MVC
+# ============================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio cache / user files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages (restored automatically)
+packages/
+*.nupkg
+.nuget/
+
+# Local SQL Server data files (dùng file .bak để restore)
+*.mdf
+*.MDF
+*.ldf
+*.LDF
+
+# ApplicationInsights
+ApplicationInsights.config
+
+# OS files
+.DS_Store
+Thumbs.db
