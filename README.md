@@ -73,8 +73,7 @@ ASPNET-DK25TTC2-DINHCONGHIEN-BANTRASUA/
 │   │   ├── Scripts/         # JavaScript
 │   │   ├── images/          # Hình sản phẩm, giao diện
 │   │   └── Web.config       # Cấu hình + chuỗi kết nối
-│   └── Database/
-│       └── QuanLiTraSua.bak # Bản sao lưu CSDL (restore trực tiếp)
+├── thesis/                  # Báo cáo đồ án (BaoCao_WebTraSua.docx)
 ├── QuanLiTraSua.sql         # Script tạo CSDL + dữ liệu mẫu
 └── README.md
 ```
@@ -103,9 +102,8 @@ CSDL tên **`QuanLiTraSua`** gồm các bảng chính:
 
 **Yêu cầu:** Visual Studio 2017+ (hoặc 2015), .NET Framework 4.5+, SQL Server (Express trở lên), SSMS.
 
-1. **Tạo cơ sở dữ liệu** — chọn 1 trong 2 cách:
-   - **Cách 1 (script):** Mở `QuanLiTraSua.sql` bằng SSMS → nhấn **Execute (F5)**.
-   - **Cách 2 (restore):** Trong SSMS → *Restore Database* → chọn `src/Database/QuanLiTraSua.bak`.
+1. **Tạo cơ sở dữ liệu:** Mở `QuanLiTraSua.sql` bằng SSMS → nhấn **Execute (F5)**
+   để tạo CSDL `QuanLiTraSua` cùng dữ liệu mẫu (sản phẩm, tài khoản admin, cấu hình cửa hàng).
 
 2. **Cập nhật chuỗi kết nối** trong `src/WebTraSua/Web.config`:
    ```xml
